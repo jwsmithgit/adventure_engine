@@ -1,0 +1,47 @@
+
+<rooms>
+    <alley>
+        <sprite>sprites/bg_alley.jpg</sprite>
+        <objects>
+            <door>
+                <sprite>sprites/door.png</sprite>
+                <x>146</x>
+                <y>166</y>
+                <state>1</state>
+                <1>
+                    <move>it appears to be locked</move>
+                    <inspect>looks like a door, its locked</inspect>
+                    <use>
+                        <item>key</item>
+                        <state>2</state>
+                        <text>you used the key on the door</text>
+                    </use>
+                </1>
+                <2>
+                    <move>bar</move>
+                    <inspect>looks like a door, I unlocked it</inspect>
+                </2>
+            </door>
+            <person>
+                <sprite>sprites/person.png</sprite>
+                <x>422</x>
+                <y>285</y>
+                <inspect>looks like a person</inspect>
+                <talk>hey there, i am a person</talk>
+                <talk2>why are you still talking to me</talk2>
+                <talkcount>0</talkcount>
+            </person>
+            <sign>
+                <sprite>sprites/sign.png</sprite>
+                <x>301</x>
+                <y>222</y>
+                <inspect>looks like a sign, hey, there's a key on the back</inspect>
+                <take>you obtained the key</take>
+                <item>key</item>
+            </sign>
+        </objects>
+    </alley>
+    <bar>
+        <sprite>sprites/bg_bar.png</sprite>
+    </bar>
+</rooms>

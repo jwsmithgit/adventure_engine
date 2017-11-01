@@ -1,0 +1,48 @@
+{
+    "rooms": {
+        "alley": {
+            "sprite": "sprites/bg_alley.jpg",
+            "objects": {
+                "door": {
+                    "sprite": "sprites/door.png",
+                    "x": 146,
+                    "y": 166,
+                    "state": 1,
+                    "1": {
+                        "move": "it appears to be locked",
+                        "inspect": "looks like a door, its locked",
+                        "use": {
+                            "item": "key",
+                            "state": 2,
+                            "text": "you used the key on the door"
+                        }
+                    },
+                    "2": {
+                        "move": "bar",
+                        "inspect": "looks like a door, I unlocked it"
+                    }
+                },
+                "person": {
+                    "sprite": "sprites/person.png",
+                    "x": 422,
+                    "y": 285,
+                    "inspect": "looks like a person",
+                    "talk": "hey there, i am a person",
+                    "talk2": "why are you still talking to me",
+                    "talkcount": 0
+                },
+                "sign": {
+                    "sprite": "sprites/sign.png",
+                    "x": 301,
+                    "y": 222,
+                    "inspect": "looks like a sign, hey, there's a key on the back",
+                    "take": "you obtained the key",
+                    "item": "key"
+                }
+            }
+        },
+        "bar": { 
+            "sprite": "sprites/bg_bar.png" 
+        }
+    }
+}
